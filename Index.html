@@ -1,2 +1,262 @@
-<h2>learn with mighty>
-  <img src="https://share.google/oUybmA1Jde6NaFlq7" alt="alte badies. />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zormira Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #f4f4f4;
+      color: #111;
+      overflow-x: hidden;
+    }
+    header {
+      width: 100%;
+      padding: 25px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 4px;
+    }
+    nav {
+      display: flex;
+      gap: 35px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-size: 14px;
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.6;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 8%;
+      background: #ededed;
+    }
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+      width: 100%;
+      max-width: 1400px;
+    }
+    .hero-text h1 {
+      font-size: 90px;
+      line-height: 1;
+      letter-spacing: 5px;
+      margin-bottom: 25px;
+    }
+    .hero-text p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.8;
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 18px 45px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-size: 14px;
+      transition: 0.4s;
+    }
+    .btn:hover {
+      background: #6f2cff;
+    }
+    .hero-image {
+      position: relative;
+    }
+    .hero-image img {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+    .products {
+      padding: 120px 8%;
+      background: white;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .section-title h2 {
+      font-size: 50px;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+    .section-title p {
+      color: #777;
+      letter-spacing: 2px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .card {
+      background: #f7f7f7;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 30px;
+    }
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    .card-content p {
+      color: #777;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .price {
+      font-size: 22px;
+      font-weight: 700;
+      color: #6f2cff;
+    }
+    footer {
+      padding: 50px;
+      text-align: center;
+      background: #111;
+      color: white;
+    }
+    footer p {
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+    @media (max-width: 900px) {
+      header {
+        padding: 20px;
+      }
+      nav {
+        display: none;
+      }
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-text h1 {
+        font-size: 55px;
+      }
+      .hero-text p {
+        margin: auto;
+        margin-bottom: 35px;
+      }
+      .hero {
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 80px;
+      }
+      .section-title h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ZORMIRA</div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">SHOP</a>
+      <a href="#">COLLECTION</a>
+      <a href="#">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>HYDRATE<br>IN STYLE</h1>
+        <p>
+          Discover premium gloss designed to shine, hydrate,
+          and elevate your beauty routine with modern luxury.
+        </p>
+        <a href="#" class="btn">SHOP NOW</a>
+      </div>
+      <div class="hero-image">
+        <img src="YOUR_IMAGE.jpg" alt="Zormira Lip Gloss">
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="section-title">
+      <h2>BEST SELLERS</h2>
+      <p>PREMIUM LIP GLOSS COLLECTION</p>
+    </div>
+    <div class="product-grid">
+      <div class="card">
+        <img src="YOUR_IMAGE.jpg" alt="Galaxy Gloss">
+        <div class="card-content">
+          <h3>Galaxy Gloss</h3>
+          <p>Ultra hydrating gloss with a sparkling finish and smooth texture.</p>
+          <div class="price">$24</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="YOUR_IMAGE.jpg" alt="Velvet Shine">
+        <div class="card-content">
+          <h3>Velvet Shine</h3>
+          <p>Lightweight formula with premium glossy pigment and hydration.</p>
+          <div class="price">$28</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="YOUR_IMAGE.jpg" alt="Luxury Glow">
+        <div class="card-content">
+          <h3>Luxury Glow</h3>
+          <p>Elegant shimmer gloss inspired by editorial beauty campaigns.</p>
+          <div class="price">$32</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 ZORMIRA BEAUTY — ALL RIGHTS RESERVED</p>
+  </footer>
+</body>
+</html>
+
